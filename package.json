@@ -1,20 +1,22 @@
 {
-  "name": "optimize-order",
+  "name": "food-delivery-system-functions",
   "version": "1.0.0",
-  "description": "Standalone Google Cloud Function for order optimization",
+  "description": "Google Cloud Functions for an advanced food delivery system",
   "main": "index.js",
   "dependencies": {
-    "@google-cloud/functions-framework": "^3.3.0",
-    "@google-cloud/firestore": "^7.0.0", 
-    "@google-cloud/storage": "^7.0.0",   
-    
+    "firebase-admin": "^12.0.0", // Use a recent version
+    "firebase-functions": "^5.0.0", // Use a recent version
+    // You might need other libraries your modules depend on, e.g.
+    // "@google-cloud/firestore": "^7.0.0", // if your modules use it directly and not via admin.firestore()
+    // "axios": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "functions-framework --target=dispatchOrder",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "echo 'Build complete'", // Keep this if Firebase expects it, or remove if not used.
+    "serve": "firebase emulators:start --only functions", // For local testing
+    "deploy": "firebase deploy --only functions" // For deployment
   },
   "engines": {
-    "node": "22"
+    "node": "20" // Or your preferred Firebase Functions supported runtime
   }
 }
