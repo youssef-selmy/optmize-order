@@ -5,11 +5,9 @@
   "main": "index.js",
   "dependencies": {
     "@google-cloud/functions-framework": "^3.3.0",
-    "@google-cloud/firestore": "^7.0.0", // Example: If your modules need Firestore directly
-    "@google-cloud/storage": "^7.0.0",   // Example: If your modules need Cloud Storage directly
-    // Add any other Google Cloud Client Libraries or general NPM packages your modules require
-    // e.g., "axios": "^1.0.0",
-    // "node-fetch": "^3.0.0"
+    "@google-cloud/firestore": "^7.0.0", 
+    "@google-cloud/storage": "^7.0.0",   
+    
   },
   "devDependencies": {},
   "scripts": {
